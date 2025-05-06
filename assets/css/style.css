@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #2563eb;
+    --bg-color: #0f172a;
+    --text-color: #e2e8f0;
+    --card-bg: #1e293b;
+    --hover-color: #3b82f6;
+}
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+.bg-dark-custom {
+    background-color: var(--card-bg);
+}
+.border-dark-custom {
+    border-color: #333 !important;
+}
+a {
+    color: #76c7ff;
+}
+a:hover {
+    color: #9fd3ff;
+}
+.profile-info h1 {
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, var(--primary-color), var(--hover-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.profile-info p {
+    font-size: 1.1rem;
+    color: #94a3b8;
+}
+.profile-img {
+    max-height: 95vh;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+}
+.portfolio-section {
+    margin-bottom: 20px;
+}
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.portfolio-card {
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.portfolio-card-content {
+    padding: 1.5rem;
+}
+.portfolio-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+.portfolio-card p {
+    margin-bottom: 1rem;
+    color: #94a3b8;
+}
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: var(--hover-color);
+}
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+}
+.contact-item {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-3px);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
