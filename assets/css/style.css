@@ -33,6 +33,9 @@ a:hover {
     font-size: 1.1rem;
     color: #94a3b8;
 }
+.fab-icon a {
+    text-decoration: none;
+}
 .profile-img {
     max-height: 95vh;
     width: auto;
